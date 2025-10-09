@@ -6,8 +6,8 @@ import os
 #pre compile setup.py
 # generate_setup.py
 
-package_name = "transformslib"
-version = "0.20.0"
+package_name = "transforms_events"
+version = "1.0.0"
 author = ""
 author_email = ""
 url = ""
@@ -41,7 +41,7 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="{url}",
-    packages=find_packages(include=["{package_name}", "{package_name}.*", "events"]),
+    packages=find_packages(include=["{package_name}", "{package_name}.*"]),
     package_data={{
         "{package_name}.templates": ["*.html", "*.txt", "*.json", "*.css", "*.js"],
     }},
