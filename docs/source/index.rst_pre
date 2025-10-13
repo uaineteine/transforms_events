@@ -28,8 +28,20 @@ Dependencies
 Contents
 =========================
 
-<automodule>
-</automodule>
+.. toctree::
+   :maxdepth: 2
+
+events.eventlog
+---------------------
+
+.. automodule:: events.eventlog
+   :members:
+
+events.jsonlog
+---------------------------
+
+.. automodule:: events.jsonlog
+   :members:
 
 Release History
 =========================

@@ -2,7 +2,6 @@ import shutil
 import subprocess
 import os
 
-
 #pre compile setup.py
 # generate_setup.py
 

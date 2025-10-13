@@ -6,20 +6,12 @@
 Metadata Transformations Framework
 =========================
 
-This program provides a data transformation framework for working with tables (DataFrames) in PySpark, Pandas, or Polars. It tracks all transformations and important events in a structured, auditable way using JSON logs.
+Provide foundational event class types designed for easy extension by derivative classes, enabling consistent event handling and customisation.
 
 Description
 =========================
 
-This framework makes your data pipeline transparent and auditable by logging every important action as a structured JSON event. You can trace exactly what happened to each table, when, and why. The framework provides three main approaches for managing tables:
-
-1. **Direct table loading** with `MetaFrame` for single table operations
-
-2. **Payload-based loading** with `SupplyLoad` for configuration-driven multi-table loading
-
-3. **Collection management** with `Tablecollection` for flexible multi-table operations
-
-Each approach provides the same event tracking and audit capabilities while offering different levels of control and automation for your specific use case.
+This package provides a suite of extensible event classes for structured JSON logging across diverse environments. It enables consistent event representation, simplifies integration, and supports customisation for specific application needs.
 
 .. toctree::
    :maxdepth: 2
@@ -38,7 +30,17 @@ Contents
 .. toctree::
    :maxdepth: 2
 
+events.eventlog
+---------------------
 
+.. automodule:: events.eventlog
+   :members:
+
+events.jsonlog
+---------------------------
+
+.. automodule:: events.jsonlog
+   :members:
 
 Release History
 =========================
