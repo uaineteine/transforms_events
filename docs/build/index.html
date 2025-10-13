@@ -46,19 +46,8 @@
 <li><a class="reference internal" href="#description">Description</a></li>
 <li><a class="reference internal" href="#dependencies">Dependencies</a></li>
 <li><a class="reference internal" href="#contents">Contents</a><ul>
-<li><a class="reference internal" href="#module-events.eventlog">events.eventlog</a><ul>
-<li><a class="reference internal" href="#events.eventlog.Event"><code class="docutils literal notranslate"><span class="pre">Event</span></code></a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#module-events.jsonlog">events.jsonlog</a><ul>
-<li><a class="reference internal" href="#events.jsonlog.JSONLog"><code class="docutils literal notranslate"><span class="pre">JSONLog</span></code></a><ul>
-<li><a class="reference internal" href="#events.jsonlog.JSONLog.class_type"><code class="docutils literal notranslate"><span class="pre">JSONLog.class_type</span></code></a></li>
-<li><a class="reference internal" href="#events.jsonlog.JSONLog.log"><code class="docutils literal notranslate"><span class="pre">JSONLog.log()</span></code></a></li>
-<li><a class="reference internal" href="#events.jsonlog.JSONLog.repr_dict"><code class="docutils literal notranslate"><span class="pre">JSONLog.repr_dict()</span></code></a></li>
-</ul>
-</li>
-</ul>
-</li>
+<li><a class="reference internal" href="#events-eventlog">events.eventlog</a></li>
+<li><a class="reference internal" href="#events-jsonlog">events.jsonlog</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#release-history">Release History</a></li>
@@ -108,49 +97,11 @@
 <h1>Contents<a class="headerlink" href="#contents" title="Link to this heading"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
-<section id="module-events.eventlog">
-<span id="events-eventlog"></span><h2>events.eventlog<a class="headerlink" href="#module-events.eventlog" title="Link to this heading"></a></h2>
-<dl class="py class">
-<dt class="sig sig-object py" id="events.eventlog.Event">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">events.eventlog.</span></span><span class="sig-name descname"><span class="pre">Event</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event_type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">event_payload</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">event_description</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">log_location</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">macro_uuid</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#events.eventlog.Event" title="Link to this definition"></a></dt>
-<dd><p>Specialised JSONLog event with type and optional description.</p>
-</dd></dl>
-
+<section id="events-eventlog">
+<h2>events.eventlog<a class="headerlink" href="#events-eventlog" title="Link to this heading"></a></h2>
 </section>
-<section id="module-events.jsonlog">
-<span id="events-jsonlog"></span><h2>events.jsonlog<a class="headerlink" href="#module-events.jsonlog" title="Link to this heading"></a></h2>
-<dl class="py class">
-<dt class="sig sig-object py" id="events.jsonlog.JSONLog">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">events.jsonlog.</span></span><span class="sig-name descname"><span class="pre">JSONLog</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">log_payload</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">log_location</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">indent_depth</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">persistent_uuid</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">macro_uuid</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#events.jsonlog.JSONLog" title="Link to this definition"></a></dt>
-<dd><p>Log events as JSON with a UUID, timestamp, and optional file output.</p>
-<dl class="py property">
-<dt class="sig sig-object py" id="events.jsonlog.JSONLog.class_type">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">class_type</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#events.jsonlog.JSONLog.class_type" title="Link to this definition"></a></dt>
-<dd><p>Returns the name of the class as a string.</p>
-<p>This property provides a dynamic way to identify the type of the current instance.
-It is especially useful for logging, debugging, or serialization tasks where knowing
-the class name is helpful. Subclasses automatically inherit this behavior without
-needing to override or redefine it.</p>
-<dl class="simple">
-<dt>Returns:</dt><dd><p>str: The name of the class (e.g., “PipelineEvent”, “TransformEvent”).</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="events.jsonlog.JSONLog.log">
-<span class="sig-name descname"><span class="pre">log</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#events.jsonlog.JSONLog.log" title="Link to this definition"></a></dt>
-<dd><p>Write the event to the specified log file.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="events.jsonlog.JSONLog.repr_dict">
-<span class="sig-name descname"><span class="pre">repr_dict</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#events.jsonlog.JSONLog.repr_dict" title="Link to this definition"></a></dt>
-<dd><p>Return the event as a dictionary, recursively converting objects to dicts.</p>
-</dd></dl>
-
-</dd></dl>
-
+<section id="events-jsonlog">
+<h2>events.jsonlog<a class="headerlink" href="#events-jsonlog" title="Link to this heading"></a></h2>
 </section>
 </section>
 <section id="release-history">
