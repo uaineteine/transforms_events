@@ -1,6 +1,0 @@
-setup.py
-transforms_events.egg-info/PKG-INFO
-transforms_events.egg-info/SOURCES.txt
-transforms_events.egg-info/dependency_links.txt
-transforms_events.egg-info/requires.txt
-transforms_events.egg-info/top_level.txt
