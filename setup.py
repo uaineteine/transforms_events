@@ -5,7 +5,7 @@ long_description = '# Meta Transforms Framework\n\n![py version](https://img.shi
 
 setup(
     name="transforms_events",
-    version="1.0.0",
+    version="1.0.1",
     author="",
     author_email="",
     description="A python package of a working transforms framework",
