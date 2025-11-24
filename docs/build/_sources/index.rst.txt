@@ -20,7 +20,7 @@ This package provides a suite of extensible event classes for structured JSON lo
 Dependencies
 =========================
 
-* adaptiveio>=1.0.0
+* adaptiveio>=1.0.2
 
 
 

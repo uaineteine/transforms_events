@@ -75,7 +75,7 @@ class JSONLog:
 
         return json.dumps(dict_repr, indent=self.indent_depth, ensure_ascii=True)
 
-    def log(self):
+    def log(self, spark=None):
         """
         Write the event to the specified log file.
         """
@@ -86,7 +86,7 @@ class JSONLog:
             os.makedirs(os.path.dirname(self.log_location), exist_ok=True)
 
             to_write = self.repr_dict()
-            append_json_newline(to_write, self.log_location)
+            append_json_newline(to_write, self.log_location, spark=spark)
         except Exception as e:
             print(f"Error writing log to {self.log_location}: {e}", file=sys.stderr)
 
