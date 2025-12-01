@@ -1,6 +1,6 @@
 # Meta Transforms Framework
 
-![py version](https://img.shields.io/badge/python-3.10+-blue) ![Version 1.0.1](https://img.shields.io/badge/version-1.0.1-brightgreen) 
+![py version](https://img.shields.io/badge/python-3.10+-blue) ![Version 1.0.2](https://img.shields.io/badge/version-1.0.2-brightgreen) 
 
 # Events
 
