@@ -80,7 +80,7 @@ class JSONLog:
         Write the event to the specified log file.
         """
         if self.log_location == "":
-            raise ValueError("No log location specified for the event.")
+            raise ValueError("TE0001 No log location specified for the event.")
         
         try:
             os.makedirs(os.path.dirname(self.log_location), exist_ok=True)
@@ -88,7 +88,7 @@ class JSONLog:
             to_write = self.repr_dict()
             append_json_newline(to_write, self.log_location, spark=spark)
         except Exception as e:
-            print(f"Error writing log to {self.log_location}: {e}", file=sys.stderr)
+            print(f"TE0002 Error writing log to {self.log_location}: {e}", file=sys.stderr)
 
     @property
     def class_type(self) -> str:
