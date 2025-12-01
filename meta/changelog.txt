@@ -1,3 +1,7 @@
+Version 1.0.2
+^^^^^^^^^^^^
+* Added error codes
+
 Version 1.0
 ^^^^^^^^^^^^
 * Release
